@@ -5,6 +5,9 @@ After clone project, run this command
  ./gradlew run
  ```
 
+* [Serialization Plugin](https://github.com/Kotlin/kotlinx.serialization)
+
+
 ###Tip:
 if you're creating a new project and you're faced with the problem with jcenter being discontinued, do this:
 
