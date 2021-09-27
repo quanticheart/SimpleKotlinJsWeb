@@ -24,16 +24,9 @@ class AmiiboPresenter : AmiiboContract.Presenter {
     override fun loadAmiibo() {
         CoroutineScope(Dispatchers.Main).launch {
             view.showLoader()
-
             val response = getAsync2(API_URL)
-            console.log("1111")
-            view.hideLoader()
             view.showAmiibo(response.amiibo)
-
-            response.amiibo.forEach { book ->
-                console.log(book.character)
-            }
-            console.log("2222")
+            view.hideLoader()
         }
     }
 

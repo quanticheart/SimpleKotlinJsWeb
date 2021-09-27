@@ -7,12 +7,11 @@ import kotlinx.browser.document
 import kotlinx.browser.window
 
 fun main() {
-    window.onload = { document.body?.sayHello() }
+//    window.onload = { document.body?.sayHello() }
 
     val bookStorePresenter = AmiiboPresenter()
     val bookStorePage = AmiiboPage(bookStorePresenter)
-    bookStorePresenter.attach(bookStorePage)
-    bookStorePresenter.loadAmiibo()
+    bookStorePage.show()
 }
 
 fun Node.sayHello() {
