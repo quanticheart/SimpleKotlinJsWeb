@@ -4,6 +4,7 @@ import amiibo.repository.model.Amiibo
 import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.dom.addClass
+import kotlinx.html.dom.create
 import org.w3c.dom.*
 
 class AmiiboItem {
@@ -88,7 +89,7 @@ class AmiiboItem {
         descriptionElement: HTMLDivElement,
         viewDetailsButtonElement: HTMLButtonElement
     ) {
-        containerElement.addClass("card", "card-shadow", "col-4" )
+        containerElement.addClass("card", "card-shadow", "col-6")
         imageElement.addClass("cover-image")
         titleElement.addClass("text-title", "float-left")
         descriptionElement.addClass("text-description", "float-left")
